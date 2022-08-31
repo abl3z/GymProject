@@ -1,75 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>We Go Jim</title>
-    <link rel="stylesheet" href="./index1.css"
+    <link rel="stylesheet" href="./index1.css">
 </head>
-<body> 
+
+<body>
+
+    <!-- Header -->
     <nav id="nav1">
         <div>
-            <img src="./images/logo.jpg" alt="" class="logo"> 
+            <img src="./images/logo.jpg" alt="" class="logo">
             <!-- <h4>we jim</h4> -->
         </div>
-        <ul class="navLink">   
+        <ul class="navLink">
             <li>
-                <a href="./page1.html">Main Page</a>
+                <a href="./index1.html">Main Page</a>
             </li>
             <li>
                 <a href="">about us</a>
             </li>
             <li>
-                <a href="">sgin in</a>
+                <a href="">sign in</a>
             </li>
         </ul>
     </nav>
+
+    <!-- Training & Protein Powder -->
+
     <figure class="container">
-    <img src="./images/exercises.webp" alt="" >
-    <figcaption>
-    <h3>Training</h3>
-    <p>In this section you will learn some exercises to play. Why dont you just ... </p>
-    <a href="" id="train"> Give it a shot ! </a>
-    </figcaption>
+        <img src="./images/exercises.webp" alt="">
+        <figcaption>
+            <h3>Training</h3>
+            <p>In this section you will learn some exercises to play. Why dont you just ... </p>
+            <a href="" id="train"> Give it a shot ! </a>
+        </figcaption>
     </figure>
     <figure class="container">
-    <img src="./images/protein powder.jpg" alt="" >
-    <figcaption>
-    <h3>Protien powder</h3>
-    <p>In this section you will learn some exercises to play. Why dont you just ... </p>
-    <a href="" id="pro"> See More </a>
-    </figcaption>
+        <img src="./images/protein powder.jpg" alt="">
+        <figcaption>
+            <h3>Protien powder</h3>
+            <p>In this section you will learn some exercises to play. Why dont you just ... </p>
+            <a href="" id="pro"> See More </a>
+        </figcaption>
     </figure>
-    <span class="soon" ><h2 class="soon">comming soon &hearts;</h2></span>
+    <span class="soon">
+        <h2 class="soon">comming soon &hearts;</h2>
+    </span>
     <div class="divfooter">
+
+        <!-- Footer -->
+
         <hr><br>
-        <h2>get the lastest news sent right to your inbox ! </h2>
+        <h2 id="email">get the lastest news sent right to your inbox ! </h2>
         <br>
         <div>
-        <form method="get"><label><input type="email" name="email" id="email" placeholder="Your Email"></label>
-        <label><a href="./"><input type="submit" value="ok" id="submit" onclick="alert('Email was sent successfully !')"></label></a>
-        </form>
+            <form method="get"><label><input type="email" name="email" id="email-input" placeholder="Your Email"></label>
+                <label><a href="./"><input type="submit" value="ok" id="submit"
+                            onclick="alert('Email was sent successfully !')"></label></a>
+            </form>
         </div>
         <footer class="navfoot">
-        <nav>
-            <ul class="ulfooter">
-                <li>
-                    <a href=""> contact us</a>
-                </li>
-                <li>
-                    <a href="">Help center</a>
-                </li>
-                <li>
-                    <a href="">Send us Feedback</a>
-                </li>
-            </ul>
-        </nav>
-        <br>
-    <h3 style="color: white;">
-    &copy; copy right by <span style="color: white; border:3px red double; font-style: italic"> &rAarr; SalehAbuAlEzz &lAarr; </span>
-    </h3>
-</div>
-</footer>
+            <nav>
+                <ul class="ulfooter">
+                    <li>
+                        <a href=""> contact us</a>
+                    </li>
+                    <li>
+                        <a href="">Help center</a>
+                    </li>
+                    <li>
+                        <a href="">Send us Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+            <h3 style="color: white;" id="copyright">
+                &copy; copy right 2022, All rights reserved.   by <span style="color: white; border:3px red double; font-style: italic"> &rAarr;
+                    SalehAbuAlEzz &lAarr; </span>   
+            </h3>
+    </div>
+    </footer>
 </body>
+
 </html>
