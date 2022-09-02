@@ -41,8 +41,7 @@
     <form>
         <input type="email" class="input_box" placeholder="Email">
         <input type="username" class="input_box" placeholder="User Name">
-        <input type="password" class="input_box" id="pass2" placeholder="Password">
-        <input type="password" class="input_box" id="pass2" placeholder="Confirm Password" onKeyUp="checkPasswordStrength();" >
+        <input type="password" class="input_box" id="password" placeholder="Password" onkeyup="checkPasswordStrength();">
         <P id="password-strength-status"></P>
         <p><span><input type="checkbox"></span> I agree to the terms of services</p>
         <button type="button" class="sign_btn">sgin up</button>
@@ -52,17 +51,17 @@
     </form>
 </div>
 <script>
-    function checkPasswordStrength() {
+        function checkPasswordStrength() {
         var number = /([0-9])/;
         var lowerCase = /([a-z])/;
         var uperCase = /([A-Z])/;
-        var specialcharacters = /([~,!,@,#,$,%,^,&,*,-,,+,=,?,>,])/;
-        if ($('#pass2').val().length < 6) {
+        var special_characters = /([~,!,@,#,$,%,^,&,*,-,_,+,=,?,>,<])/;
+        if ($('#password').val().length < 8) {
             $('#password-strength-status').removeClass();
             $('#password-strength-status').addClass('weak-pass');
-            $('#password-strength-status').html("Weak (should be atleast 6 characters.)");
+            $('#password-strength-status').html("Weak (should be atleast 8 characters.)");
         } else {
-            if ($('#pass2').val().match(number) && $('#pass2').val().match(lowerCase) && $('#pass2').val().match(special_characters) && $('#pass2').val().match(uperCase)) {
+            if ($('#password').val().match(number) && $('#password').val().match(lowerCase) && $('#password').val().match(special_characters) && $('#password').val().match(uperCase)) {
                 $('#password-strength-status').removeClass();
                 $('#password-strength-status').addClass('strong-pass');
                 $('#password-strength-status').html("Strong");
@@ -83,33 +82,31 @@
 
     <footer>
         <div class="divfooter">
+                <h2 style="padding-left: 10px;">get the lastest news sent right to your inbox ! </h2>
+                <div style="margin-top: 15px;padding-left:30px;">
+                <form method="get"><label><input type="email" name="email" id="email" placeholder="Your Email"></label>
+                <label><a href="./"><input type="submit" value="ok" id="submit" onclick="alert('Email was sent successfully !')"></label></a>
+                </form>
+                </div>
             
-            <h2 style="padding-left: 10px;">get the lastest news sent right to your inbox ! </h2>
-            <div style="margin-top: 15px;padding-left:30px;">
-            <form method="get"><label><input type="email" name="email" id="email" placeholder="Your Email"></label>
-            <label><a href="./"><input type="submit" value="ok" id="submit" onclick="alert('Email was sent successfully !')"></label></a>
-            </form>
-            </div>
-            
-            <nav>
-                <ul class="ulfooter">
-                    <li>
-                        <a href=""> contact us</a>
-                    </li>
-                    <li>
-                        <a href="">Help center</a>
-                    </li>
-                    <li>
-                        <a href="">Send us Feedback</a>
-                    </li>
-                </ul>
-            </nav>
-            <br>
-        <h3 style="color: white;">
-        &copy; copy right by <span style="color: white; border:3px red double; font-style: italic"> &rAarr; SalehAbuAlEzz &lAarr; </span>
-        </h3>
-    </div>
+                <nav>
+                    <ul class="ulfooter">
+                        <li>
+                            <a href=""> contact us</a>
+                        </li>
+                        <li>
+                            <a href="">Help center</a>
+                        </li>
+                        <li>
+                            <a href="">Send us Feedback</a>
+                        </li>
+                    </ul>
+                </nav>
+                <br>
+            <h3 style="color: white;">
+            &copy; copy right by <span style="color: white; border:3px red double; font-style: italic"> &rAarr; SalehAbuAlEzz &lAarr; </span>
+            </h3>
+        </div>
     </footer>
-    <script src="./sign.js"></script>
 </body>
 </html>
