@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="sign.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</head>
+<body>
+    <nav id="nav1">
+        <div>
+            <a href="index1.html"> <img src="./images/logo.jpg" alt="" class="logo"> </a>
+            <!-- <h4>we jim</h4> -->
+        </div>
+        <ul class="navLink">   
+            <li>
+                <a href="./index1.html">Main Page</a>
+            </li>
+            <li>
+                <a href="">about us</a>
+            </li>
+            <li>
+                <a href="./sign.html" style="background-color:gray; border: 2px solid rgb(211, 210, 210); padding: 10px;">sign in</a>
+            </li>
+        </ul>
+    </nav>
+
+
+
+
+
+
+
+
+
+
+<div class="sign_up">
+    <h1>Sign up Now</h1>
+    <form>
+        <input type="email" class="input_box" placeholder="Email">
+        <input type="username" class="input_box" placeholder="User Name">
+        <input type="password" class="input_box" id="pass2" placeholder="Password">
+        <input type="password" class="input_box" id="pass2" placeholder="Confirm Password" onKeyUp="checkPasswordStrength();" >
+        <P id="password-strength-status"></P>
+        <p><span><input type="checkbox"></span> I agree to the terms of services</p>
+        <button type="button" class="sign_btn">sgin up</button>
+        <hr id="hr">
+        <p class="or">OR</p>
+        <p>Do you have an account ? <a href="#" id="sign_in_btn">sign in</a></p>
+    </form>
+</div>
+<script>
+    function checkPasswordStrength() {
+        var number = /([0-9])/;
+        var lowerCase = /([a-z])/;
+        var uperCase = /([A-Z])/;
+        var specialcharacters = /([~,!,@,#,$,%,^,&,*,-,,+,=,?,>,])/;
+        if ($('#pass2').val().length < 6) {
+            $('#password-strength-status').removeClass();
+            $('#password-strength-status').addClass('weak-pass');
+            $('#password-strength-status').html("Weak (should be atleast 6 characters.)");
+        } else {
+            if ($('#pass2').val().match(number) && $('#pass2').val().match(lowerCase) && $('#pass2').val().match(special_characters) && $('#pass2').val().match(uperCase)) {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('strong-pass');
+                $('#password-strength-status').html("Strong");
+            } else {
+                $('#password-strength-status').removeClass();
+                $('#password-strength-status').addClass('medium-pass');
+                $('#password-strength-status').html("Medium (should include lowerCase, numbers and special characters.)");
+            }
+        }
+    }
+</script>
+
+
+
+
+
+
+
+    <footer>
+        <div class="divfooter">
+            
+            <h2 style="padding-left: 10px;">get the lastest news sent right to your inbox ! </h2>
+            <div style="margin-top: 15px;padding-left:30px;">
+            <form method="get"><label><input type="email" name="email" id="email" placeholder="Your Email"></label>
+            <label><a href="./"><input type="submit" value="ok" id="submit" onclick="alert('Email was sent successfully !')"></label></a>
+            </form>
+            </div>
+            
+            <nav>
+                <ul class="ulfooter">
+                    <li>
+                        <a href=""> contact us</a>
+                    </li>
+                    <li>
+                        <a href="">Help center</a>
+                    </li>
+                    <li>
+                        <a href="">Send us Feedback</a>
+                    </li>
+                </ul>
+            </nav>
+            <br>
+        <h3 style="color: white;">
+        &copy; copy right by <span style="color: white; border:3px red double; font-style: italic"> &rAarr; SalehAbuAlEzz &lAarr; </span>
+        </h3>
+    </div>
+    </footer>
+    <script src="./sign.js"></script>
+</body>
+</html>

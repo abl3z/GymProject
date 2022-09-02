@@ -1,0 +1,151 @@
+body
+{background-attachment: fixed;
+background-image: url(./images/wallpaper.webp);
+background-repeat: no-repeat;
+background-size:100%;
+/* position: relative; */
+margin:0;
+padding: 0;
+font-family: sans-serif;
+}
+#nav1
+{
+  /* text-decoration:underline; */
+    /* position:inherit; */
+    top: 0%;
+    right: 0%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    min-height: 8vh;
+    background-color: #423F3E;
+    /* font-family: 'Poppins', sans-serif; */
+    border-bottom: 3px solid white;
+    position: sticky;
+    z-index: 1;
+    font-style: italic
+
+}
+.ahead
+{
+   background-color: aliceblue;
+   /* color: black; */
+}
+.logo
+{
+  width: 25%;
+  height: 25%;
+  border-radius: 20px;
+  /* float: left; */
+  opacity: 0.8;
+
+}
+#div1
+{
+    float:right;
+}
+.navLink
+{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+    
+}
+.navLink li {
+    list-style: none;
+    font-family: inherit;
+}
+
+.navLink a {
+    color: rgb(218, 218, 218);
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 19px;
+    /* border: 3px solid; */
+    padding: 3px;
+    position: relative
+}
+footer{  
+    background-color: #423F3E;
+    border-top:3px #fff solid;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: 730px;
+    min-height: 8vh;
+    bottom: 0;
+    
+  }
+  .sign_up{
+    width: 300px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.3);
+    background: #fff;
+    padding: 20px;
+    margin: 8% auto 0;
+    text-align: center;
+  }
+
+  .sign_up h1{
+    color: #1c8adb;
+    margin-bottom: 30px;
+  }
+
+  .input_box{
+    border-radius: 20px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 90%;
+    border: 1px solid #999;
+    outline: none;
+
+  }
+
+  button{
+    color: #fff;
+    background-color: #1c8adb;
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    font-size: 15px;
+    margin: 10px 0;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  #sign_in_btn{
+    text-decoration: none;
+  }
+
+  #hr{
+    margin-top: 30px;
+    width: 80%;
+  }
+
+  .or{
+    background: #fff;
+    width: 30px;
+    margin: -19px auto 10px;
+  }
+
+  #password-strength-status {
+    padding: 5px 10px;
+    border-radius: 4px;
+    margin-top: 5px;
+}
+
+.medium-pass {
+    background-color: burlywood;
+    border: #BBB418 1px solid;
+}
+
+.weak-pass {
+    background-color: red;
+    border: #AA4502 1px solid;
+}
+
+.strong-pass {
+    background-color: #12CC1A;
+    border: #0FA015 1px solid;
+}
